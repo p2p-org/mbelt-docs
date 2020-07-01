@@ -122,7 +122,7 @@ Results of the collection stage are posted to the PostgreSQL sink database, and 
 
 
 
-We've built a [prototype]() of Polkadot indexing using this stack and end to end latency from block processed in node to collection finish looks to be under two second. We think that might be improved, and estimate the sequencing stage for most of the blockchain applications to be sub-second.  The prototype is, on purpose, a bit ugly, and more complex than is strictly necessary for what it does: the reason for that is that we wanted to try and show off data cleaning and enrichment features on Kafka streams. For more details see prototype documentation.
+We've built a [prototype](https://github.com/p2p-org/mbelt-polkadot-streamer) of Polkadot indexing using this stack and end to end latency from block processed in node to collection finish looks to be under two second. We think that might be improved, and estimate the sequencing stage for most of the blockchain applications to be sub-second.  The prototype is, on purpose, a bit ugly, and more complex than is strictly necessary for what it does: the reason for that is that we wanted to try and show off data cleaning and enrichment features on Kafka streams. For more details see prototype documentation.
 
 
 
