@@ -6,3 +6,4 @@
 - https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/ - important flaws of ksql
 - https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/ - what is streaming and CEP
 - https://arxiv.org/pdf/1802.08496.pdf benchmarking
+- https://arxiv.org/abs/1905.12133 - Pro-SQL as event stream processing language
