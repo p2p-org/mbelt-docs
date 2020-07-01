@@ -1,9 +1,0 @@
-- https://docs.ksqldb.io/en/latest/ - ksqldb documentation
-- http://static.googleusercontent.com/media/research.google.com/de//pubs/archive/41378.pdf - millwheel
-- https://www.semanticscholar.org/paper/Twitter-Heron%3A-Stream-Processing-at-Scale-Kulkarni-Bhagat/e847c3ec130da57328db79a7fea794b07dbccdd9?p2df - twitter heron
-- https://medium.baqend.com/real-time-stream-processors-a-survey-and-decision-guidance-6d248f692056 - great comaprison table
-- https://www.pipelinedb.com - cool stream processing over postgres
-- https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/ - important flaws of ksql
-- https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/ - what is streaming and CEP
-- https://arxiv.org/pdf/1802.08496.pdf benchmarking
-- https://arxiv.org/abs/1905.12133 - Pro-SQL as event stream processing language
