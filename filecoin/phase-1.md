@@ -120,9 +120,12 @@ It's better to avoid joins, enrichment with data via blockchain node API, or oth
 
 Results of the collection stage are posted to the PostgreSQL sink database, and other sinks that want their data freshest (e.g. DeFi arbitrage bots). A watchdog process looks over to check for backfilling trigger (e.g. a block or two was missed and needs to be reprocessed), reorganizations, and sequential processing watermark. When all the data up until block X had been collected, sequential processing for everything sequentialized but not yet processed is kicked off. See below a diagram of our proposed architecture:
 
-![architecture diagram](img/architecture.png)
+![architecture diagram](../img/architecture.png)
 
-We've built a [prototype](https://github.com/p2p-org/mbelt-polkadot-streamer) of Polkadot indexing using this stack and end to end latency from block processed in node to collection finish looks to be under two second. We think that might be improved, and estimate the sequencing stage for most of the blockchain applications to be sub-second.  The prototype is, on purpose, a bit ugly, and more complex than is strictly necessary for what it does: the reason for that is that we wanted to try and show off data cleaning and enrichment features on Kafka streams. For more details see prototype documentation.
+We've built a [prototype](https://github.com/p2p-org/mbelt-polkadot-streamer) of Polkadot indexing using this stack and end to end latency from block processed in node to collection finish looks to be under two second. We think that might be improved, and estimate the sequencing stage for most of the blockchain applications to be sub-second.  The prototype is, on purpose, a bit ugly, and more complex than is strictly necessary for what it does: the reason for that is that we wanted to try and show off data cleaning and enrichment features on Kafka streams. For more details see Polkadot prototype documentation. We're running it for about a month and have built a couple on internal products around it (e.g. the profitability tracker). It's working more reliably than an open-source verison of Polkascan.
+
+
+We also build a [prototype](https://github.com/p2p-org/mbelt-filecoin-streamer) of Filecoin indexing, that collects blocks and transactions using ... and ..., and ksqlDB to process them. Compared to the lotus-chainwatch for the same purpose, it's ... LOC and, in our opinion, eaier to test and maintain, though probably a bit worse latency-wise. 
 
 
 
